@@ -1,21 +1,88 @@
-*,html{
+html{
   padding:0;
   margin:0;
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  height:100%; 
 }
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size:12px;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
-.bg-img{
-    background-image: url(images/bg-pattern-desktop.svg);
+.container{
+    width:80%;
+    position: relative;
+    top:110px;
 }
+.row{
+    margin: auto;
+    background-color: white;
+}
+
+
+.bg-img{
+    position: relative;
+    top:-10%;
+    left:-180px;
+    max-height:550px;
+}
+
 .illustration-box{
-    background-image: url(images/illustration-box-desktop.svg);
+    position: relative;
+    top:43%;
+    left:-85px;
+    z-index: 2;
 }
 
 .woman{
-    background-image: url(images/illustration-woman-online-desktop.svg);
+    position: relative;
+    top:10%;
+    left:-100px;
+    
+}
+
+.column>img{
+    position: absolute;
+}
+
+.column{
+    width:50%;
+    float:left;
+    padding: 50px;
+}
+
+.accordion-button,.accordion-body{
+    color:hsl(237, 12%, 33%) !important;
+}
+
+.accordion-body{
+    color:hsl(240, 6%, 50%) !important;
+}
+
+[aria-expanded="false"].accordion-button:hover{
+    color: hsl(14, 88%, 65%) !important;
+}
+
+.accordion-button{
+    border-color:white !important;
+}
+
+[aria-expanded="true"].accordion-button
+{
+font-weight: bold;
+background: none;
+}
+
+.accordion-item{
+    border:none;
+    border-bottom: 1px solid hsl(240, 5%, 91%) ;
+}
+
+.accordion-button::after {
+	background-image: url("images/icon-arrow-down.svg");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("images/icon-arrow-down.svg");
 }
