@@ -9,6 +9,9 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size:12px;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .container{
@@ -89,4 +92,42 @@ background: none;
 }
 .accordion-button:not(.collapsed)::after {
 	background-image: url("images/icon-arrow-down.svg");
+}
+
+/* @media only screen and (min-width: 375px){
+    .woman{
+        background-image: url("images/illustration-woman-online-desktop.svg");
+    }
+
+    .bg-img{
+        background-image: url("images/bg-pattern-desktop.svg");
+    }
+} */
+@media only screen and (max-width: 375px){
+    *{
+        text-align: center !important;
+        margin:auto;
+        background: no-repeat;
+    }
+    .container{
+        margin:250px 20px;
+        width:120%;
+    }
+    .row{
+        width:100%;
+    }
+    .column{
+        width:100%;
+        margin:0
+    }
+    .image{
+        overflow:visible;
+    }
+    .illustration-box,.woman,.bg-img {
+        /* position: absolute; */
+        position: absolute;
+        z-index: 1;
+        left:50%;
+    }
+    
 }
