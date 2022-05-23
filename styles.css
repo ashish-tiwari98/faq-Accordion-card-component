@@ -117,24 +117,32 @@ background: none;
     }
     .column{
         width:100%;
+        height:50%;
         padding:auto 0;
     }
     .image{
         overflow:visible;
     }
-    .illustration-box,.woman,.bg-img {
+    .woman,.bg-img{
         position: absolute;
         z-index: 1;
     }
     .illustration-box{
-
+        display: none;
     }
     .woman{
+        height: 250px;
+        width:60%;
         background-image: url("images/illustration-woman-online-mobile.svg");
-       
+        top:-120%;
+        left:18%;
     }
     .bg-img{
-
+        height: 450px;
+        width:100%;
+        background-image: url("images/bg-pattern-mobile.svg");
+        top:5%;
+        left:20%;
     }
     
 }
