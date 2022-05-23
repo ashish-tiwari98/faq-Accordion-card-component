@@ -30,11 +30,6 @@ body{
     overflow: hidden;
 }
 
-.bg-img{
-    position: absolute;
-    left:-115%;
-    top:-55%;
-}
 
 .illustration-box{
     position: absolute;
@@ -43,18 +38,9 @@ body{
     z-index: 2;
 }
 
-.woman{
-    position: absolute;
-    left:-18%;
-    top:15%;
-}
-
-.div>img{
-    position: absolute;
-}
-
 .column{
     width:50%;
+    height:500px;
     float:left;
     padding: 50px;
 }
@@ -93,6 +79,26 @@ background: none;
 	background-image: url("images/icon-arrow-down.svg");
 }
 
+@media only screen and (min-width:500px){
+    .bg-img{
+       height:1000px;
+       width: 1000px;
+       background-image: url("images/bg-pattern-desktop.svg");
+       position: absolute;
+       background-repeat: no-repeat;
+       top:-65%;
+       left:-130%;
+    }
+
+    .woman{
+        background-repeat: no-repeat;
+        width:110%;
+        height:100%;
+        background-image: url("images/illustration-woman-online-desktop.svg");
+        position: absolute;
+        left:-22%;
+    }
+}
 @media only screen and (max-width: 375px){
     *{
         text-align:left !important;
@@ -125,8 +131,7 @@ background: none;
     }
     .woman{
         background-image: url("images/illustration-woman-online-mobile.svg");
-        left:34%;
-        top:-60%;
+       
     }
     .bg-img{
 
